@@ -55,7 +55,7 @@ function Projects() {
             <Button className="" onClick={() => handleFilter('js')}>Javascript</Button>
             
           
-            <Button className="mx-[10px]" >All</Button>
+            <Button className="mx-[10px]" onClick={() => handleAll()}>All</Button>
          
         </div>
       </div>
