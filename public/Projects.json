@@ -1,0 +1,47 @@
+[
+  {
+    "image": "./music.png",
+    "title": "Music School",
+    "description": "An online platform tailored for music schools, providing tools and resources to facilitate music education and enhance learning experiences for students.",
+    "category" : "Next",
+    "hyperlink" : "https://music-school-sigma.vercel.app/"
+  },
+    {
+      "image": "./blog.png",
+      "title": "Blog Website",
+      "description": "Embark on a journey through captivating narratives and insightful discussions with our blog website, offering a diverse range of articles on topics spanning from culture and technology to lifestyle and beyond.",
+      "category" : "React",
+      "hyperlink" : "https://mega-blog-website-sable.vercel.app"
+    },
+    {
+      "image": "./news.png",
+      "title": "News App",
+      "description": "Stay informed and connected with our News App, delivering breaking headlines and in-depth coverage across various topics, ensuring you're always up-to-date with the latest stories from around the globe.",
+      "category" : "React",
+      "hyperlink" : "https://github.com/Muhammad-Umar-Waqar/news-app"
+    },
+    {
+      "image": "./router.png",
+      "title": "Router DOM",
+      "description": "Explore seamless navigation and dynamic content presentation with our simple website featuring React Router DOM integration, effortlessly guiding users through pages while maintaining a smooth browsing experience.",
+      "category" : "React",
+      "hyperlink" : "https://react-router-dom-bay.vercel.app/"
+    },
+    {
+      "image": "./alarm.png",
+      "title": "Alarm Clock",
+      "description": "Rise and shine with our Alarm Clock app, your reliable companion for waking up refreshed and on time, offering customizable alarms and intuitive controls to start your day right.",
+      "category" : "js",
+      "hyperlink" : "https://alarm-clock-eight.vercel.app/"
+    },
+    {
+      "image": "./pass.png",
+      "title": "Password Generator",
+      "description": "Ensure your online security with our Password Generator tool, crafting strong and unique passwords effortlessly, safeguarding your accounts and personal information against unauthorized access",
+      "category" : "React",
+      "hyperlink" : "https://password-generator-eight-lovat.vercel.app/"
+
+    }
+  
+  ]
+  
