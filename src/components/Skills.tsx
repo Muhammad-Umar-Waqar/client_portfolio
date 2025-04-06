@@ -303,7 +303,7 @@ export function Skills() {
     },
   ];
 
-  const [api, setApi] = React.useState<CarouselApi>();
+  const [_api, setApi] = React.useState<CarouselApi>();
 
   return (
     <div className="flex flex-col items-center justify-center sm:my-[9rem] my-[6rem] px-4">
