@@ -87,7 +87,7 @@ function Projects() {
   key={index}
   className="relative w-[250px] m-[30px] border border-xl shadow-2xl shadow-gray-400 p-5 rounded-lg"
 >
-  <div className="relative block">
+  {/* <div className="relative block">
     <img
       src={item.image}
       alt={item.title}
@@ -102,8 +102,37 @@ function Projects() {
         <img src="/github.svg" alt="github" />
       </a>
     </div>
-  </div>
+  </div> */}
   
+  <div className="relative block">
+  <img
+    src={item.image}
+    alt={item.title}
+    className="h-[250px] rounded-lg object-cover object-center mb-[10px] ease-in-out hover:scale-110 transition-transform duration-300"
+  />
+  {/* On mobile: overlay is visible by default, on md and up: only on hover */}
+  <div className="absolute inset-0 bg-black rounded-lg opacity-50 md:opacity-0 md:hover:opacity-50 transition-opacity duration-300"></div>
+  {/* On mobile: buttons are always visible; on md and up: only on hover */}
+  <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 opacity-100 md:opacity-0 md:hover:opacity-100 transition-opacity duration-300">
+    <a
+      href={item.hyperlink}
+      className="border-2 border-solid border-white text-white px-4 py-2 rounded-md transition-transform transform hover:scale-110 hover:bg-blue-500 hover:text-black duration-300 ease-in-out"
+    >
+      <img src="/liveLink.svg" alt="Live URL" className="h-6 w-6 inline-block mr-2" />
+      Live
+    </a>
+    <a
+      href={item.githubLink}
+      className="border-2 border-solid border-white text-white px-4 py-2 rounded-md transition-transform transform hover:scale-110 hover:bg-black hover:text-white duration-300 ease-in-out"
+    >
+      <img src="/github.svg" alt="GitHub" className="h-6 w-6 inline-block mr-2" />
+      GitHub
+    </a>
+  </div>
+</div>
+
+
+
   <a href={item.hyperlink}>
     <h1 className="font-bold DMsans" rel="noopener noreferrer">{item.title}</h1>
   </a>
