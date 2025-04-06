@@ -29,6 +29,7 @@ function Projects() {
   }
 
   interface Project {
+    githubLink: string | undefined;
     image: string;
     title: string;
     description: string;
@@ -86,7 +87,7 @@ function Projects() {
   key={index}
   className="relative w-[250px] m-[30px] border border-xl shadow-2xl shadow-gray-400 p-5 rounded-lg"
 >
-  <a href={item.hyperlink} className="relative block">
+  <div className="relative block">
     <img
       src={item.image}
       alt={item.title}
@@ -94,14 +95,14 @@ function Projects() {
     />
     <div className="absolute inset-0 bg-black opacity-0 rounded-lg  hover:opacity-50 transition-opacity duration-300"></div>
     <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 opacity-0 hover:opacity-100 transition-opacity duration-300">
-      <a href={item.hyperlink} className="border-2 border-solid border-white text-white px-4 py-2 rounded-md transition-colors duration-300">
+      <a href={item.hyperlink} className="border-2 border-solid border-white text-white px-4 py-2 rounded-md transition-colors transform hover:scale-110 duration-300 ease-in-out">
       <img src="/liveLink.svg" alt="github" /> 
       </a>
-      <a href={item.hyperlink} className="border-2 border-solid border-white text-white px-4 py-2 rounded-md transition-colors duration-300">
+      <a href={item.githubLink} className="border-2 border-solid border-white text-white px-4 py-2 rounded-md transition-colors transform hover:scale-110 duration-300 ease-in-out">
         <img src="/github.svg" alt="github" />
       </a>
     </div>
-  </a>
+  </div>
   
   <a href={item.hyperlink}>
     <h1 className="font-bold DMsans" rel="noopener noreferrer">{item.title}</h1>
