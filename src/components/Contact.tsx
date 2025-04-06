@@ -267,7 +267,7 @@ function Contact() {
         </motion.div>
       </div>
       <form ref={formRef} onSubmit={handleSubmit(onSubmit)}>
-        <div className="flex flex-col gap-5 items-center justify-center mt-[70px]">
+        <div className="flex flex-col gap-8 items-center justify-center mt-[70px]">
           <div className="relative">
             <input
               {...register("from_name", { required: "Name is required" })}
@@ -277,7 +277,7 @@ function Contact() {
               className="md:w-[650px] w-[300px] sm:w-[500px] p-[15px] rounded-xl bg-gray-100 outline-none"
             />
             {errors.from_name && (
-              <p className="absolute text-red-500 text-sm mt-1">
+              <p className="absolute text-red-500 text-sm my-2">
                 {errors.from_name.message}
               </p>
             )}
@@ -297,7 +297,7 @@ function Contact() {
               className="md:w-[650px] w-[300px] sm:w-[500px] p-[15px] rounded-xl bg-gray-100 outline-none"
             />
             {errors.from_email && (
-              <p className="absolute text-red-500 text-sm mt-1">
+              <p className="absolute text-red-500 text-sm my-2">
                 {errors.from_email.message}
               </p>
             )}
@@ -312,7 +312,7 @@ function Contact() {
               rows={7}
             />
             {errors.message && (
-              <p className="absolute text-red-500 text-sm mt-1">
+              <p className="absolute text-red-500 text-sm my-2">
                 {errors.message.message}
               </p>
             )}
