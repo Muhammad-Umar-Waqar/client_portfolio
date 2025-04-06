@@ -152,21 +152,30 @@ function ParallaxText({ children, baseVelocity = 100 }: ParallaxProps) {
   );
 }
 
-export default function App() {
+export default function Home() {
   return (
-    <div  id='home'  className=" relative bg-gray-200  pt-[6.5rem]  ">
+    <div  className=" relative bg-gray-200  pt-[6.2rem]  ">
    
   
       <div className="md:max-w-full sm:mx-[3rem] flex lg:flex-row flex-col items-center justify-around md:justify-between mb-[2.2rem] homefont" >
         <div className="">
-          <h2 className="text-[3rem] sm:text-[64px] text-center lg:text-start lg:mb-8 leading-[64px] mb-5 brush-bg ">
-            Hello, I'm Muhsina 
-            <div className="brush-wrap">
+          <div>
+          <h2 className="text-[2rem] sm:text-[3rem] md:text-[64px] text-center lg:text-start lg:mb-8 leading-[45px] sm:leading-[64px] mb-5  font-semibold">
+            Hello, I'm Muhsina{"\u00a0"}
+            <div className="brush-wrap text-center lg:text-start ">
              <p>Website Designer</p>
             </div>
           </h2>  
+          <p className="text-base lg:text-start text-center sm:px-auto px-3 text-black/60">
+  Self-taught developer passionate about coding and design.{"\u00a0"} 
+  <br className="hidden sm:block" />
+  From HTML/CSS to mastering JavaScript and React,{"\u00a0"}
+  <br className="hidden sm:block" />
+   I build dynamic apps and user-friendly interfaces.
+</p>
 
-
+          </div>
+          
 <svg height="0" width="0" xmlns="http://www.w3.org/2000/svg">
   <defs>
  
@@ -213,10 +222,11 @@ export default function App() {
 </svg>
 
 
-          <div>
+
           
-          </div>
-          <div className="flex items-center justify-center lg:justify-start flex-wrap sm:flex-nowrap md:space-x-3 lg:space-x-6 xl:space-x-8 ">
+   
+      
+          <div className="mt-[35px] flex items-center justify-center lg:justify-start flex-wrap sm:flex-nowrap md:space-x-3 lg:space-x-6 xl:space-x-8 ">
   <div className="flex flex-col">
     {/* <span className="font-bold text-2xl md:text-xl lg:text-3xl xl:text-[40px] xl:mb-2">
       200+

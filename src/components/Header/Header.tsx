@@ -1,9 +1,7 @@
 import { useState } from "react";
-import { Link } from "react-scroll";
+import { Link, NavLink } from "react-router-dom";
 import { RxCross1 } from "react-icons/rx";
 import 'animate.css'
-
-
 
 
 export default function Header() {
@@ -51,62 +49,65 @@ export default function Header() {
             <ul className={`${mobileNav === true ? "animate-slidein-left transition-transform duration-500 " : "" } flex flex-col border-0 outline-none mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0`}>
               <li>
                 
-                <Link 
-                to="home"
-                  className=" shadow-sm lg:shadow-none focus:outline-none focus:bg-transparent bg-transparent   
-                    block py-2 pr-4 pl-3 duration-200  cursor-pointer
-                    text-gray-700  lg:bg-transparent  lg:hover:bg-transparent lg:border-0 hover:text-orange-700 
-                     lg:p-0 "
-                   spy={true} smooth={true} offset={-105} duration={500} onClick ={()=>setMobileNav(false)}
-                >
-                  HOME
-                </Link>
               </li>
               <li>
-                <Link
-                   to="about"
-                  className="  shadow-sm lg:shadow-none    lg:bg-transparent focus:outline-none focus:bg-transparent  block py-2 pr-4 pl-3 duration-200  cursor-pointer
-                           text-gray-700 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 
-                            lg:p-0"
-                            spy={true} smooth={true} offset={-105} duration={500} onClick ={()=>setMobileNav(false)}
+                <NavLink
+                // className="shadow-sm lg:shadow-none    lg:bg-transparent focus:outline-none focus:bg-transparent  block py-2 pr-4 pl-3 duration-200  cursor-pointer
+                  //          text-gray-700 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 
+                  //           lg:p-0"
+                  to="/" 
+                  className={({isActive}) =>
+                    `${isActive ? 'text-orange-600': 'text-gray-700'}
+                     shadow-sm lg:shadow-none lg:bg-transparent focus:outline-none focus:bg-transparent  block py-2 pr-4 pl-3 duration-200  cursor-pointer
+                    lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
+                  }
+                  onClick ={()=>setMobileNav(false)}
                 >
                   ABOUT
-                </Link>
+                </NavLink>
                 </li>
-                
-               
-                <li>
-                <Link
-                to="skills"
-                className=" shadow-sm lg:shadow-none lg:bg-transparent   focus:outline-none focus:bg-transparent  block py-2 pr-4 pl-3 duration-200  cursor-pointer
-                text-gray-700  lg:hover:bg-transparent lg:border-0 hover:text-orange-700 
-                 lg:p-0" 
-                 spy={true} smooth={true} offset={-105} duration={500} onClick ={()=>setMobileNav(false)}
-                >
-                  SKILLS 
-                </Link>
-              </li>
               <li>
-                <Link
-                   to="projects"
+                {/* <Link
                    className=" shadow-sm lg:shadow-none  lg:bg-transparent   focus:outline-none focus:bg-transparent  block py-2 pr-4 pl-3 duration-200  cursor-pointer
                    text-gray-700  lg:hover:bg-transparent lg:border-0 hover:text-orange-700 
-                    lg:p-0"
-                    spy={true} smooth={true} offset={-105} duration={500} onClick ={()=>setMobileNav(false)}
+                   lg:p-0"
+                  onClick ={()=>setMobileNav(false)}
                 >
                   PROJECTS 
-                </Link>
+                </Link> */}
+
+                 <NavLink
+                  to="/projects"
+                  className={({isActive}) =>
+                    `${isActive ? 'text-orange-600': 'text-gray-700'}
+                     shadow-sm lg:shadow-none lg:bg-transparent focus:outline-none focus:bg-transparent  block py-2 pr-4 pl-3 duration-200  cursor-pointer
+                    lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
+                  }
+                  onClick ={()=>setMobileNav(false)}
+                >
+                  PROJECTS
+                </NavLink>
               </li>
                 <li>
-                <Link
-                   to="contact"
+                {/* <Link
                    className=" shadow-sm lg:shadow-none   lg:bg-transparent  focus:outline-none focus:bg-transparent  block py-2 pr-4 pl-3 duration-200  cursor-pointer
                    text-gray-700 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 
                     lg:p-0"
-                    spy={true} smooth={true} offset={-105} duration={500} onClick ={()=>setMobileNav(false)}
+                     onClick ={()=>setMobileNav(false)}
                 >
                   CONTACT
-                </Link>
+                </Link> */}
+                 <NavLink
+                  to="/contact"
+                  className={({isActive}) =>
+                    `${isActive ? 'text-orange-600': 'text-gray-700'}
+                     shadow-sm lg:shadow-none lg:bg-transparent focus:outline-none focus:bg-transparent  block py-2 pr-4 pl-3 duration-200  cursor-pointer
+                    lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
+                  }
+                  onClick ={()=>setMobileNav(false)}
+                >
+                  CONTACT
+                </NavLink>
               </li>
                 <li>
                 {/* <Link
@@ -116,10 +117,23 @@ export default function Header() {
                     lg:p-0"
                     spy={true} smooth={true} offset={-105} duration={500} onClick ={()=>setMobileNav(false)}
                 > */}
-                  <a className="shadow-sm lg:shadow-none   lg:bg-transparent  focus:outline-none focus:bg-transparent  block py-2 pr-4 pl-3 duration-200  cursor-pointer
+                  {/* <a className="shadow-sm lg:shadow-none   lg:bg-transparent  focus:outline-none focus:bg-transparent  block py-2 pr-4 pl-3 duration-200  cursor-pointer
                    text-gray-700 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 
-                    lg:p-0" target="_blank" href="./myCV.pdf">My CV</a>
+                    lg:p-0" target="_blank" href="./myCV.pdf">My CV</a> */}
                 {/* </Link> */}
+
+
+                <NavLink
+                  to="/cv"
+                  className={({isActive}) =>
+                    `${isActive ? 'text-orange-600': 'text-gray-700'}
+                     shadow-sm lg:shadow-none lg:bg-transparent focus:outline-none focus:bg-transparent  block py-2 pr-4 pl-3 duration-200  cursor-pointer
+                    lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`
+                  }
+                  onClick ={()=>setMobileNav(false)}
+                >
+                  CV
+                </NavLink>
               </li>
 
             </ul>

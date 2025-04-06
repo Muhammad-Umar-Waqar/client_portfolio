@@ -1,14 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
+import Layout from './Layout.tsx'
 import './index.css'
 import {  RouterProvider, createBrowserRouter } from 'react-router-dom'
 import About from './components/About.tsx'
 import Contact from './components/Contact.tsx'
 import Projects from './components/Projects.tsx'
 import Skills from './components/Skills.tsx'
-import Testimonials from './components/Testimonials.tsx'
-import Home from './components/Home.tsx'
+import CV from './components/CV.tsx'
 
 
 
@@ -16,11 +15,11 @@ import Home from './components/Home.tsx'
 const router = createBrowserRouter(
       ([{
         path: "/",
-        element : <App/>,
+        element : <Layout/>,
         children : [
           {
             path : "",
-            element : <Home/>
+            element : <About/>
           },
           {
             path : "contact",
@@ -39,10 +38,9 @@ const router = createBrowserRouter(
             element : <Skills/>
           },
           {
-            path : "testimonials",
-            element : <Testimonials/>
+            path : "cv",
+            element : <CV/>
           }
-
         ] 
       }])
 )

@@ -61,7 +61,8 @@ font-size: 20px;
 .brush-wrap {
     position: relative;
     display: inline-block;
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     z-index: 0; 
   }
   
@@ -83,15 +84,9 @@ font-size: 20px;
     clip-path: url(#clip); /* applying clip animation */
   }
   
-  .brush-wrap span {
-    margin: 0;
-    color: black;
-    font-style: italic;
-    filter: drop-shadow(0px 0px 2px black);
-  }
+
 
   .homefont{
     font-family: "Outfit", sans-serif;
   }
-
 

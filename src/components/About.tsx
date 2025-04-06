@@ -1,18 +1,24 @@
 import { motion } from "framer-motion"
 import { fadeIn } from "./variants"
+import Home from "./Home"
 
 
 
 function About() {
 
   return (
-     <div className="mt-[100px]  " id="about">
+
+    <div>
+    <Home />
+     <div className="sm:my-[9rem] my-[6rem] " >
+      
         <h1 className="text-3xl sm:px-auto sm:text-3xl md:text-5xl font-sansOut  font-semibold text-center text-black capitalize ">
           I Know That <span className="text-orange-500 font-semibold"> Good Apps</span>
         </h1>
         <h1 className="text-3xl sm:text-3xl md:text-5xl  font-sansOut font-semibold text-center text-black capitalize ">
       Means Good Business
         </h1>
+      
         <motion.div
         variants={fadeIn("up", 0.5)}
         initial="hidden"
@@ -51,6 +57,7 @@ function About() {
             <p className="mt-[10px] text-gray-600 text-sm  ml-[10px] text-left font- leading-relaxed">Experience in designing and optimizing database schemas, writing complex queries, and implementing efficient indexing strategies.</p>
           </motion.div>
       </div>
+    </div>
   )
 }
 
