@@ -118,14 +118,14 @@ function Projects() {
       href={item.hyperlink}
       className="border-2 border-solid border-white text-white px-4 py-2 rounded-md transition-transform transform hover:scale-110 hover:bg-blue-500 hover:text-black duration-300 ease-in-out"
     >
-      <img src="/liveLink.svg" alt="Live URL" className="h-6 w-6 inline-block mr-2" />
+      <img src="/liveLink.svg" alt="Live URL" className="h-6 w-6 inline-block " />
       
     </a>
     <a
       href={item.githubLink}
       className="border-2 border-solid border-white text-white px-4 py-2 rounded-md transition-transform transform hover:scale-110 hover:bg-black hover:text-white duration-300 ease-in-out"
     >
-      <img src="/github.svg" alt="GitHub" className="h-6 w-6 inline-block mr-2" />
+      <img src="/github.svg" alt="GitHub" className="h-6 w-6 inline-block " />
  
     </a>
   </div>
